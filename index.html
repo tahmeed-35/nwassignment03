@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <!-- TailwindCSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@1.11.0/dist/full.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+
+<!-- Navbar -->
+<nav class="py-4 bg-transparent">
+    <div class="container mx-auto px-6 md:px-20 flex justify-between items-center">
+        <!-- Logo -->
+        <a href="#" class="text-xl font-bold text-black">
+            Hockey<span class="text-red-500 font-bold">'s</span>
+        </a>
+
+        <!-- Navigation Links -->
+        <ul class="hidden md:flex space-x-6 text-black">
+            <li><a href="#" class="hover:text-red-500">Home</a></li>
+            <li><a href="#" class="hover:text-red-500">About</a></li>
+            <li><a href="#" class="hover:text-red-500">Pages</a></li>
+            <li><a href="#" class="hover:text-red-500">Blog</a></li>
+            <li><a href="#" class="hover:text-red-500">Contact</a></li>
+        </ul>
+        
+        <!-- Responsive Navigation for Small Devices -->
+        <div class="flex items-center space-x-4">
+            <button id="menu-toggle" class="block text-black hover:text-red-500 focus:outline-none md:hidden">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            
+            <!-- Search Icon -->
+            <svg class="w-6 h-6 text-black hidden md:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m-.61-6.02A7.5 7.5 0 1110 3a7.5 7.5 0 016.02 11.89"></path>
+            </svg>
+
+            <!-- Get Ticket Button -->
+            <button class="px-4 py-2 bg-black text-white hover:bg-red-500 hover:text-black rounded-full md:block">Get Ticket</button>
+        </div>
+    </div>
+</nav>
+
+<!-- Banner Section -->
+<section class="py-16 md:px-20">
+    <div class="container mx-auto relative">
+        <!-- Slider Container -->
+        <div class="overflow-hidden rounded-lg relative">
+            <!-- Slider -->
+            <div class="flex relative">
+                <!-- Slide 1 -->
+                <div class="w-full flex-shrink-0 relative">
+                    <!-- Your slide content goes here -->
+                    <img src="Images/1.png" alt="Slide 1" class="w-full rounded-lg">
+                    <!-- Text on Bottom Right Corner -->
+                    <div class="absolute bottom-4 right-4 bg-black text-white px-4 py-2 rounded-t-lg z-10">
+                        <p>This is some text on the bottom right corner</p>
+                    </div>
+                    <!-- Slider Arrows -->
+                    <div class="absolute bottom-4 left-4 flex items-center space-x-2 z-10">
+                        <!-- Left Arrow -->
+                        <button class="bg-black text-white p-2 rounded-full focus:outline-none">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                            </svg>
+                        </button>
+                        <!-- Right Arrow -->
+                        <button class="bg-black text-white p-2 rounded-full focus:outline-none">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="w-full flex-shrink-0 relative">
+                    <!-- Your slide content goes here -->
+                    <img src="slide2.jpg" alt="Slide 2" class="w-full rounded-lg">
+                </div>
+                <!-- Add more slides if needed -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Header Section -->
+<section class="py-8 md:py-12">
+    <div class="container mx-auto px-6 md:px-20">
+        <!-- Dotted Line before Header -->
+        <div class="w-full border-b border-dotted border-gray-400 mb-6 md:mb-8"></div>
+        
+        <!-- Header -->
+        <div class="text-center">
+            <h2 class="text-3xl md:text-4xl font-bold">Professional Hockeys Club</h2>
+            <div class="w-24 h-1 mx-auto bg-gray-400 rounded-full mt-2 mb-6 md:mb-8"></div>
+        </div>
+        
+        <!-- Paragraph -->
+        <p class="text-gray-600 text-lg md:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper ultricies augue, eget consequat elit lobortis vel.</p>
+        
+        <!-- Dotted Line after Paragraph -->
+        <div class="w-full border-t border-dotted border-gray-400 mt-6 md:mt-8"></div>
+    </div>
+</section>
+
+<!-- Infographics Section -->
+<section class="py-8 md:py-12">
+    <div class="container mx-auto px-6 md:px-20 text-center overflow-x-auto">
+        <!-- Infographics -->
+        <div class="flex flex-nowrap justify-center items-center space-x-4 md:space-x-8">
+            <!-- Infographic 1 -->
+            <div class="inline-flex flex-col items-center">
+                <div class="w-24 h-24 rounded-full border-4 border-red-500 border-solid relative">
+                    <div class="absolute inset-0 border-4 border-solid border-red-500 rounded-full animate-spin"></div>
+                    <div class="absolute inset-0 w-full h-full flex justify-center items-center text-lg font-bold text-red-500">87%</div>
+                </div>
+                <h3 class="text-lg font-bold mt-2">Prayer Facility</h3>
+                <p class="text-gray-600">Amet consectetur. Condimentum dignissim adipiscing.</p>
+            </div>
+
+            <!-- Infographic 2 -->
+            <div class="inline-flex flex-col items-center">
+                <div class="w-24 h-24 rounded-full border-4 border-green-500 border-solid relative">
+                    <div class="absolute inset-0 border-4 border-solid border-green-500 rounded-full animate-spin"></div>
+                    <div class="absolute inset-0 w-full h-full flex justify-center items-center text-lg font-bold text-green-500">69%</div>
+                </div>
+                <h3 class="text-lg font-bold mt-2">Prayer Facility</h3>
+                <p class="text-gray-600">Amet consectetur. Condimentum dignissim adipiscing.</p>
+            </div>
+
+            <!-- Infographic 3 -->
+            <div class="inline-flex flex-col items-center">
+                <div class="w-24 h-24 rounded-full border-4 border-yellow-500 border-solid relative">
+                    <div class="absolute inset-0 border-4 border-solid border-yellow-500 rounded-full animate-spin"></div>
+                    <div class="absolute inset-0 w-full h-full flex justify-center items-center text-lg font-bold text-yellow-500">70%</div>
+                </div>
+                <h3 class="text-lg font-bold mt-2">Prayer Facility</h3>
+                <p class="text-gray-600">Amet consectetur. Condimentum dignissim adipiscing.</p>
+            </div>
+
+            <!-- Infographic 4 -->
+            <div class="inline-flex flex-col items-center">
+                <div class="w-24 h-24 rounded-full border-4 border-blue-500 border-solid relative">
+                    <div class="absolute inset-0 border-4 border-solid border-blue-500 rounded-full animate-spin"></div>
+                    <div class="absolute inset-0 w-full h-full flex justify-center items-center text-lg font-bold text-blue-500">80%</div>
+                </div>
+                <h3 class="text-lg font-bold mt-2">Prayer Facility</h3>
+                <p class="text-gray-600">Amet consectetur. Condimentum dignissim adipiscing.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Program Section -->
+    
+    <!-- Header Section -->
+<section class="py-8 md:py-12">
+    <div class="container mx-auto px-6 md:px-20">
+        <!-- Dotted Line before Header -->
+        <div class="w-full border-b border-dotted border-gray-400 mb-6 md:mb-8"></div>
+        
+        <!-- Header -->
+        <div class="text-center">
+            <h2 class="text-3xl md:text-4xl font-bold">Program Sections</h2>
+            <div class="w-24 h-1 mx-auto bg-gray-400 rounded-full mt-2 mb-6 md:mb-8"></div>
+        </div>
+        
+        <!-- Paragraph -->
+        <p class="text-gray-600 text-lg md:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper ultricies augue, eget consequat elit lobortis vel.</p>
+        
+        <!-- Dotted Line after Paragraph -->
+        <div class="w-full border-t border-dotted border-gray-400 mt-6 md:mt-8"></div>
+    </div>
+</section>
+
+
+<!-- Photo Section -->
+<section class="py-8 md:py-12">
+    <div class="container mx-auto px-6 md:px-20">
+        <div class="flex flex-wrap items-start">
+            <!-- Photo 1 -->
+            <div class="relative w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <img src="Images/3.png" alt="Photo 1" class="w-full h-auto rounded-t-lg">
+                    <!-- Content Overlay -->
+                    <div class="absolute bottom-0 left-5 right-0 p-4">
+                        <h2 class="text-2xl md:text-3xl font-bold">Your Heading Here</h2>
+                        <p class="text-gray-600 mt-2">Your paragraph text goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <!-- Register Now Button -->
+                        <button class="mt-4 px-6 py-2 bg-red-500 text-white rounded-lg">Register Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Photo 2 -->
+            <div class="relative w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <div class="border border-gray-200 rounded-lg overflow-hidden shadow-md">
+                    <img src="Images/3.png" alt="Photo 2" class="w-full h-auto rounded-t-lg">
+                    <!-- Content Overlay -->
+                    <div class="absolute bottom-0 left-5 right-0 p-4">
+                        <h2 class="text-2xl md:text-3xl font-bold">Your Heading Here</h2>
+                        <p class="text-gray-600 mt-2">Your paragraph text goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <!-- Register Now Button -->
+                        <button class="mt-4 px-6 py-2 bg-red-500 text-white rounded-lg">Register Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Photo Section -->
+<section class="py-4 md:py-8">
+    <div class="container mx-auto px-6 md:px-20">
+        <div class="relative">
+            <!-- Photo -->
+            <div class="border border-gray-200 rounded-lg overflow-hidden shadow-md">
+                <img src="Images/4.png" alt="Photo" class="w-full h-auto rounded-md">
+                <!-- Content Overlay -->
+                <div class="absolute bottom-0 left-5 right-0 p-6">
+                    <!-- Heading -->
+                    <h2 class="text-xl md:text-2xl font-bold">Your Heading Here</h2>
+                    <!-- Paragraph -->
+                    <p class="text-gray-600 mt-2">Your paragraph text goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <!-- Register Now Button -->
+                    <button class="mt-4 px-6 py-2 bg-red-500 text-white rounded-lg">Register Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- New Products Section -->
+    <section class="py-16">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold mb-8">New Products</h2>
+            <!-- Your content for new products goes here -->
+        </div>
+    </section>
+
+    <!-- Client Questions Section (Bonus) -->
+    <section class="bg-gray-100 py-16">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold mb-8">Client Questions</h2>
+            <!-- Your content for client questions goes here -->
+        </div>
+    </section>
+
+    <!-- Get in Touch Section -->
+    <section class="bg-blue-500 text-white py-16">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold mb-8">Get in Touch</h2>
+            <!-- Your content for get in touch goes here -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 My Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
