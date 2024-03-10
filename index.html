@@ -104,7 +104,7 @@
         </div>
         
         <!-- Paragraph -->
-        <p class="text-gray-600 text-lg md:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper ultricies augue, eget consequat elit lobortis vel.</p>
+        <p class="text-gray-600 text-lg md:text-xl text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper ultricies augue, eget consequat elit lobortis vel.</p>
         
         <!-- Dotted Line after Paragraph -->
         <div class="w-full border-t border-dotted border-gray-400 mt-6 md:mt-8"></div>
@@ -115,11 +115,11 @@
 <section class="py-8 md:py-12">
     <div class="container mx-auto px-6 md:px-20 text-center overflow-x-auto">
         <!-- Infographics -->
-        <div class="flex flex-nowrap justify-center items-center space-x-4 md:space-x-8">
+        <div class="flex flex-wrap justify-center items-start md:items-center md:flex-row">
             <!-- Infographic 1 -->
-            <div class="inline-flex flex-col items-center">
+            <div class="flex flex-col items-center w-full md:w-auto">
                 <div class="w-24 h-24 rounded-full border-4 border-red-500 border-solid relative">
-                    <div class="absolute inset-0 border-4 border-solid border-red-500 rounded-full animate-spin"></div>
+                    <div class="absolute inset-0 border-4 border-solid border-red-500 rounded-full"></div>
                     <div class="absolute inset-0 w-full h-full flex justify-center items-center text-lg font-bold text-red-500">87%</div>
                 </div>
                 <h3 class="text-lg font-bold mt-2">Prayer Facility</h3>
@@ -127,9 +127,9 @@
             </div>
 
             <!-- Infographic 2 -->
-            <div class="inline-flex flex-col items-center">
+            <div class="flex flex-col items-center w-full md:w-auto">
                 <div class="w-24 h-24 rounded-full border-4 border-green-500 border-solid relative">
-                    <div class="absolute inset-0 border-4 border-solid border-green-500 rounded-full animate-spin"></div>
+                    <div class="absolute inset-0 border-4 border-solid border-green-500 rounded-full"></div>
                     <div class="absolute inset-0 w-full h-full flex justify-center items-center text-lg font-bold text-green-500">69%</div>
                 </div>
                 <h3 class="text-lg font-bold mt-2">Prayer Facility</h3>
@@ -137,20 +137,10 @@
             </div>
 
             <!-- Infographic 3 -->
-            <div class="inline-flex flex-col items-center">
+            <div class="flex flex-col items-center w-full md:w-auto">
                 <div class="w-24 h-24 rounded-full border-4 border-yellow-500 border-solid relative">
-                    <div class="absolute inset-0 border-4 border-solid border-yellow-500 rounded-full animate-spin"></div>
+                    <div class="absolute inset-0 border-4 border-solid border-yellow-500 rounded-full"></div>
                     <div class="absolute inset-0 w-full h-full flex justify-center items-center text-lg font-bold text-yellow-500">70%</div>
-                </div>
-                <h3 class="text-lg font-bold mt-2">Prayer Facility</h3>
-                <p class="text-gray-600">Amet consectetur. Condimentum dignissim adipiscing.</p>
-            </div>
-
-            <!-- Infographic 4 -->
-            <div class="inline-flex flex-col items-center">
-                <div class="w-24 h-24 rounded-full border-4 border-blue-500 border-solid relative">
-                    <div class="absolute inset-0 border-4 border-solid border-blue-500 rounded-full animate-spin"></div>
-                    <div class="absolute inset-0 w-full h-full flex justify-center items-center text-lg font-bold text-blue-500">80%</div>
                 </div>
                 <h3 class="text-lg font-bold mt-2">Prayer Facility</h3>
                 <p class="text-gray-600">Amet consectetur. Condimentum dignissim adipiscing.</p>
@@ -176,7 +166,7 @@
         </div>
         
         <!-- Paragraph -->
-        <p class="text-gray-600 text-lg md:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper ultricies augue, eget consequat elit lobortis vel.</p>
+        <p class="text-gray-600 text-lg md:text-xl text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper ultricies augue, eget consequat elit lobortis vel.</p>
         
         <!-- Dotted Line after Paragraph -->
         <div class="w-full border-t border-dotted border-gray-400 mt-6 md:mt-8"></div>
@@ -185,16 +175,16 @@
 
 
 <!-- Photo Section -->
-<section class="py-8 md:py-12">
+<section class="py-4 md:py-8">
     <div class="container mx-auto px-6 md:px-20">
         <div class="flex flex-wrap items-start">
             <!-- Photo 1 -->
             <div class="relative w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                <div class="border border-gray-200 rounded-lg overflow-hidden shadow-md">
                     <img src="Images/3.png" alt="Photo 1" class="w-full h-auto rounded-t-lg">
                     <!-- Content Overlay -->
-                    <div class="absolute bottom-0 left-5 right-0 p-4">
-                        <h2 class="text-2xl md:text-3xl font-bold">Your Heading Here</h2>
+                    <div class="absolute bottom-0 left-5 right-0 p-4 md:p-6">
+                        <h2 class="text-lg md:text-xl lg:text-2xl font-bold">Your Heading Here</h2>
                         <p class="text-gray-600 mt-2">Your paragraph text goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <!-- Register Now Button -->
                         <button class="mt-4 px-6 py-2 bg-red-500 text-white rounded-lg">Register Now</button>
@@ -206,8 +196,21 @@
                 <div class="border border-gray-200 rounded-lg overflow-hidden shadow-md">
                     <img src="Images/3.png" alt="Photo 2" class="w-full h-auto rounded-t-lg">
                     <!-- Content Overlay -->
-                    <div class="absolute bottom-0 left-5 right-0 p-4">
-                        <h2 class="text-2xl md:text-3xl font-bold">Your Heading Here</h2>
+                    <div class="absolute bottom-0 left-5 right-0 p-4 md:p-6">
+                        <h2 class="text-lg md:text-xl lg:text-2xl font-bold">Your Heading Here</h2>
+                        <p class="text-gray-600 mt-2">Your paragraph text goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <!-- Register Now Button -->
+                        <button class="mt-4 px-6 py-2 bg-red-500 text-white rounded-lg">Register Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Photo 3 -->
+            <div class="relative w-full px-3">
+                <div class="border border-gray-200 rounded-lg overflow-hidden shadow-md">
+                    <img src="Images/4.png" alt="Photo" class="w-full h-auto rounded-md">
+                    <!-- Content Overlay -->
+                    <div class="absolute bottom-0 left-5 right-0 p-4 md:p-6">
+                        <h2 class="text-lg md:text-xl lg:text-2xl font-bold">Your Heading Here</h2>
                         <p class="text-gray-600 mt-2">Your paragraph text goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <!-- Register Now Button -->
                         <button class="mt-4 px-6 py-2 bg-red-500 text-white rounded-lg">Register Now</button>
@@ -218,34 +221,147 @@
     </div>
 </section>
 
-<!-- Photo Section -->
-<section class="py-4 md:py-8">
+
+    <!-- New Products Section -->
+    <section class="py-8 md:py-12">
+        <div class="container mx-auto px-6 md:px-20">
+            <!-- Dotted Line before Header -->
+            <div class="w-full border-b border-dotted border-gray-400 mb-6 md:mb-8"></div>
+            
+            <!-- Header -->
+            <div class="text-center">
+                <h2 class="text-3xl md:text-4xl font-bold">Product Section</h2>
+                <div class="w-24 h-1 mx-auto bg-gray-400 rounded-full mt-2 mb-6 md:mb-8"></div>
+            </div>
+            
+            <!-- Paragraph -->
+            <p class="text-gray-600 text-lg md:text-xl text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper ultricies augue, eget consequat elit lobortis vel.</p>
+            
+            <!-- Dotted Line after Paragraph -->
+            <div class="w-full border-t border-dotted border-gray-400 mt-6 md:mt-8"></div>
+        </div>
+    </section>
+    <!-- Product Cards Section -->
+<section class="py-8 md:py-12">
     <div class="container mx-auto px-6 md:px-20">
-        <div class="relative">
-            <!-- Photo -->
-            <div class="border border-gray-200 rounded-lg overflow-hidden shadow-md">
-                <img src="Images/4.png" alt="Photo" class="w-full h-auto rounded-md">
-                <!-- Content Overlay -->
-                <div class="absolute bottom-0 left-5 right-0 p-6">
-                    <!-- Heading -->
-                    <h2 class="text-xl md:text-2xl font-bold">Your Heading Here</h2>
-                    <!-- Paragraph -->
-                    <p class="text-gray-600 mt-2">Your paragraph text goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <!-- Register Now Button -->
-                    <button class="mt-4 px-6 py-2 bg-red-500 text-white rounded-lg">Register Now</button>
+        <div class="flex flex-wrap -mx-4">
+            <!-- Product Card 1 -->
+            <div class="w-full md:w-1/2 lg:w-1/2 px-4 mb-8">
+                <div class="border rounded-lg flex">
+                    <!-- Product Image -->
+                    <div class="w-1/3">
+                        <img src="Images/5.png" alt="Product 1" class="w-full h-auto rounded-l-lg">
+                    </div>
+                    <!-- Product Details -->
+                    <div class="w-2/3 p-4">
+                        <div class="relative">
+                            <div class="absolute top-2 right-2 bg-yellow-300 text-gray-800 py-1 px-2 rounded-lg">
+                                4.5 <svg class="w-4 h-4 inline text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l4 3m0 0l4-3m-4-3V3"></path></svg>
+                            </div>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Product 1</h3>
+                        <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pulvinar fermentum orci, quis ullamcorper ante porta vel. Suspendisse potenti. Cras eget magna eu elit vehicula porta.</p>
+                        <p class="text-gray-800 font-semibold">$29.99</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Product Card 2 -->
+            <div class="w-full md:w-1/2 lg:w-1/2 px-4 mb-8">
+                <div class="border rounded-lg flex">
+                    <!-- Product Image -->
+                    <div class="w-1/3">
+                        <img src="Images/10.png" alt="Product 2" class="w-full h-auto rounded-l-lg">
+                    </div>
+                    <!-- Product Details -->
+                    <div class="w-2/3 p-4">
+                        <div class="relative">
+                            <div class="absolute top-2 right-2 bg-yellow-300 text-gray-800 py-1 px-2 rounded-lg">
+                                4.2 <svg class="w-4 h-4 inline text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l4 3m0 0l4-3m-4-3V3"></path></svg>
+                            </div>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Product 2</h3>
+                        <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pulvinar fermentum orci, quis ullamcorper ante porta vel. Suspendisse potenti. Cras eget magna eu elit vehicula porta.</p>
+                        <p class="text-gray-800 font-semibold">$39.99</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 lg:w-1/2 px-4 mb-8">
+                <div class="border rounded-lg flex">
+                    <!-- Product Image -->
+                    <div class="w-1/3">
+                        <img src="Images/6.png" alt="Product 2" class="w-full h-auto rounded-l-lg">
+                    </div>
+                    <!-- Product Details -->
+                    <div class="w-2/3 p-4">
+                        <div class="relative">
+                            <div class="absolute top-2 right-2 bg-yellow-300 text-gray-800 py-1 px-2 rounded-lg">
+                                4.2 <svg class="w-4 h-4 inline text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l4 3m0 0l4-3m-4-3V3"></path></svg>
+                            </div>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Product 2</h3>
+                        <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pulvinar fermentum orci, quis ullamcorper ante porta vel. Suspendisse potenti. Cras eget magna eu elit vehicula porta.</p>
+                        <p class="text-gray-800 font-semibold">$39.99</p>
+                    </div>
+                </div>
+            </div><div class="w-full md:w-1/2 lg:w-1/2 px-4 mb-8">
+                <div class="border rounded-lg flex">
+                    <!-- Product Image -->
+                    <div class="w-1/3">
+                        <img src="Images/7.png" alt="Product 2" class="w-full h-auto rounded-l-lg">
+                    </div>
+                    <!-- Product Details -->
+                    <div class="w-2/3 p-4">
+                        <div class="relative">
+                            <div class="absolute top-2 right-2 bg-yellow-300 text-gray-800 py-1 px-2 rounded-lg">
+                                4.2 <svg class="w-4 h-4 inline text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l4 3m0 0l4-3m-4-3V3"></path></svg>
+                            </div>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Product 2</h3>
+                        <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pulvinar fermentum orci, quis ullamcorper ante porta vel. Suspendisse potenti. Cras eget magna eu elit vehicula porta.</p>
+                        <p class="text-gray-800 font-semibold">$39.99</p>
+                    </div>
+                </div>
+            </div><div class="w-full md:w-1/2 lg:w-1/2 px-4 mb-8">
+                <div class="border rounded-lg flex">
+                    <!-- Product Image -->
+                    <div class="w-1/3">
+                        <img src="Images/8.png" alt="Product 2" class="w-full h-auto rounded-l-lg">
+                    </div>
+                    <!-- Product Details -->
+                    <div class="w-2/3 p-4">
+                        <div class="relative">
+                            <div class="absolute top-2 right-2 bg-yellow-300 text-gray-800 py-1 px-2 rounded-lg">
+                                4.2 <svg class="w-4 h-4 inline text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l4 3m0 0l4-3m-4-3V3"></path></svg>
+                            </div>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Product 2</h3>
+                        <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pulvinar fermentum orci, quis ullamcorper ante porta vel. Suspendisse potenti. Cras eget magna eu elit vehicula porta.</p>
+                        <p class="text-gray-800 font-semibold">$39.99</p>
+                    </div>
+                </div>
+            </div><div class="w-full md:w-1/2 lg:w-1/2 px-4 mb-8">
+                <div class="border rounded-lg flex">
+                    <!-- Product Image -->
+                    <div class="w-1/3">
+                        <img src="Images/9.png" alt="Product 2" class="w-full h-auto rounded-l-lg">
+                    </div>
+                    <!-- Product Details -->
+                    <div class="w-2/3 p-4">
+                        <div class="relative">
+                            <div class="absolute top-2 right-2 bg-yellow-300 text-gray-800 py-1 px-2 rounded-lg">
+                                4.2 <svg class="w-4 h-4 inline text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l4 3m0 0l4-3m-4-3V3"></path></svg>
+                            </div>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Product 2</h3>
+                        <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pulvinar fermentum orci, quis ullamcorper ante porta vel. Suspendisse potenti. Cras eget magna eu elit vehicula porta.</p>
+                        <p class="text-gray-800 font-semibold">$39.99</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-    <!-- New Products Section -->
-    <section class="py-16">
-        <div class="container mx-auto">
-            <h2 class="text-2xl font-bold mb-8">New Products</h2>
-            <!-- Your content for new products goes here -->
-        </div>
-    </section>
 
     <!-- Client Questions Section (Bonus) -->
     <section class="bg-gray-100 py-16">
