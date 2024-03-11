@@ -1,0 +1,12 @@
+.collapse-title {
+    cursor: pointer;
+  }
+  
+  .collapse-content {
+    display: none;
+  }
+  
+  input[type="radio"]:checked ~ .collapse-content {
+    display: block;
+  }
+  
